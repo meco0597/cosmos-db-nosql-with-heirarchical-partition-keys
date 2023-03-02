@@ -10,9 +10,6 @@ using System.Reflection.Metadata;
 
 Stopwatch timer = new Stopwatch();
 
-Environment.SetEnvironmentVariable("COSMOS_ENDPOINT", "https://fhl-test-db.documents.azure.com:443/");
-Environment.SetEnvironmentVariable("COSMOS_KEY", "QJ4NKFR2R0DwZSVCWv068AkN1n1MwTvFywF4eIAxWIf9gUUrS2wTfxdNiOge0Zjew9FMXAeFHFUiACDb0mibUQ==");
-
 // New instance of CosmosClient class
 using CosmosClient client = new(
     accountEndpoint: Environment.GetEnvironmentVariable("COSMOS_ENDPOINT")!,
